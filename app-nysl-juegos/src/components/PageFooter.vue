@@ -1,0 +1,89 @@
+<template>
+  <div id="pageFooter" class="footer">
+    <div class="bg-success">
+        <div class="container">
+            <div class="row py-3 d-flex align-items-center mx-auto" id="divRRSS">
+                <div class="col-md-12 text-center d-flex justify-content-around">
+                    <a href="#" class="mr-2 text-warning"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="mr-2 text-warning"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class=" text-warning"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center text-md-left mt-5">
+        <div class="row">
+            <div class="col-md-3 mx-auto mb-4">
+                <h6 class="text-uppercase font-weight-bold">NYSL Ltda.</h6>
+                <ul class="list-unstyled">
+                    <li class="divider bg-warning rounded pt-1"></li>
+                </ul>
+
+                <p class="mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat obcaecati vel earum aspernatur sit impedit? Quod modi, rerum, fugit accusantium quo nihil velit deserunt ex beatae odio, facere vero at!</p>
+            </div>
+            
+            <div class="col-md-2 mx-auto mb-4">
+                <h6 class="text-uppercase font-weight-bold">Eventos</h6>
+                <ul class="list-unstyled">
+                    <li class="divider bg-warning rounded pt-1"></li>
+                </ul>
+
+                <ul class="list-unstyled">
+                <li class="my-2"><router-link to="/Juegos" class="text-info">Eventos Verano</router-link></li>
+                <li class="my-2"><router-link to="" class="text-info">Eventos Invierno</router-link></li>
+                <li class="my-2"><router-link to="/" class="text-info">Eventos Navidad</router-link></li>
+                <li class="my-2"><router-link to="" class="text-info">Eventos Año Nuevo</router-link></li>
+                </ul>
+            </div>
+            
+            <div class="col-md-2 mx-auto mb-4">
+                <h6 class="text-uppercase font-weight-bold">Mas Visitados</h6>
+                <ul class="list-unstyled">
+                    <li class="divider bg-warning rounded pt-1"></li>
+                </ul>
+                
+                <ul class="list-unstyled">
+                    <li class="my-2"><router-link to="/" class="text-info">Inicio</router-link></li>
+                    <li class="my-2 disabled"><router-link to="" class="text-info">Nosotros</router-link></li>
+                    <li class="my-2"><router-link to="/Juegos" class="text-info">Juegos</router-link></li>
+                    <li class="my-2 disabled"><router-link to="" class="text-info">Eventos</router-link></li>
+                </ul>
+            </div>
+            
+            <div class="col-md-2 mx-auto mb-4">
+                <h6 class="text-uppercase font-weight-bold">Contacto</h6>
+                <ul class="list-unstyled">
+                    <li class="divider bg-warning rounded pt-1"></li>
+                </ul>
+                
+                <ul class="list-unstyled">
+                    <li class="my-2"><router-link to="/" class="text-info"><i class="fas fa-map-marker-alt mr-2"></i>Calle Equis #1234, Ygriega, Zeta.</router-link></li>
+                    <li class="my-2 "><router-link to="" class="text-info"><i class="fas fa-mobile-alt mr-2"></i>(+56) 9 8765 4321</router-link></li>
+                    <li class="my-2"><router-link to="/Juegos" class="text-info"><i class="fas fa-envelope mr-2"></i>info@tgif.net</router-link></li>
+                    <li class="my-2 "><router-link to="" class="text-info"><i class="fas fa-inbox mr-2"></i>Formulario Contacto</router-link></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+  </div>
+</template>
+
+<script>
+export default {
+    name: 'PageFooter',
+}
+</script>
+
+<style scoped lang='sass'>
+li, p
+    font-size: .8em
+h1, h2, h3, h4, h5, h6
+    font-size: .9em
+    color: lightgreen
+i
+    transform: scale(1.3)
+#divRRSS
+    max-width: 300px
+</style>
