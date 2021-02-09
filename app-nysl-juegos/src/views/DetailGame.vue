@@ -1,8 +1,10 @@
 <template>
   <div class="details">
     <br>
-    <img src="../assets/img/soccer-field1.jpg" alt="imgDetail" id='imgDetail' class="d-flex">
-    <Header titulo='Detalles de los juegos' id="head" class="py-4 px-2 bg-warning" />
+    <div id="contImg1" class="overflow-hidden">
+      <img src="../assets/img/soccer-field2.jpg" alt="imgDetail" id='imgDetail' class="d-flex">
+    </div>
+    <Header titulo='Detalles de los juegos' id="head" class="p-2 bg-warning" />
     <ContainDetail />
     <br>
   </div>
@@ -22,7 +24,10 @@ export default {
 </script>
 
 <style scoped lang='sass'>
+#contImg1
+  width: 100%
+  max-height: 650px
 #imgDetail
   width: 100%
-  max-height: 800px
+  margin-top: -10%
 </style>

@@ -1,51 +1,58 @@
 <template>
   <div id="containJuegos" class="">
       <br>
-    <ul class="list-group mx-auto" id="groupJuegos">
-        <li class="list-group-item flex-column">
-            <div class="d-flex w-100 justify-content-between">
-                <h6>Primera Fecha</h6>
-                <small class="text-info">--/--/---- | --:-- hrs</small>
-            </div>
-            <p class="text-success d-flex justify-content-center m-3"><strong>Team A1 V/S Team B1.</strong></p>    
-            <small class="mb-1"><strong>Lugar del encuentro:</strong> Calle Equis #1234, Ygriega, Zeta.</small>
-        </li>
-        <li class="list-group-item flex-column">
-            <div class="d-flex w-100 justify-content-between">
-                <h6>Segunda Fecha</h6>
-                <small class="text-info">--/--/---- | --:-- hrs</small>
-            </div>
-            <p class="text-success d-flex justify-content-center m-3"><strong>Team A2 V/S Team B2.</strong></p>    
-            <small class="mb-1"><strong>Lugar del encuentro:</strong> Calle Equis #1234, Ygriega, Zeta.</small>
-        </li>
-        <li class="list-group-item flex-column">
-            <div class="d-flex w-100 justify-content-between">
-                <h6>Tercera Fecha</h6>
-                <small class="text-info">--/--/---- | --:-- hrs</small>
-            </div>
-            <p class="text-success d-flex justify-content-center m-3"><strong>Team A3 V/S Team B3.</strong></p>    
-            <small class="mb-1"><strong>Lugar del encuentro:</strong> Calle Equis #1234, Ygriega, Zeta.</small>
-        </li>
-        <li class="list-group-item flex-column">
-            <div class="d-flex w-100 justify-content-between">
-                <h6>Cuarta Fecha</h6>
-                <small class="text-info">--/--/---- | --:-- hrs</small>
-            </div>
-            <p class="text-success d-flex justify-content-center m-3"><strong>Team A4 V/S Team B4.</strong></p>    
-            <small class="mb-1"><strong>Lugar del encuentro:</strong> Calle Equis #1234, Ygriega, Zeta.</small>
-        </li>
-        <li class="list-group-item flex-column">
-            <div class="d-flex w-100 justify-content-between">
-                <h6>Quinta Fecha</h6>
-                <small class="text-info">--/--/---- | --:-- hrs</small>
-            </div>
-            <p class="text-success d-flex justify-content-center m-3"><strong>Team A5 V/S Team B5.</strong></p>    
-            <small class="mb-1"><strong>Lugar del encuentro:</strong> Calle Equis #1234, Ygriega, Zeta.</small>
-        </li>
-    </ul>
+    <div id="contLista" class="d-md-flex justify-content-md-center mx-auto">
+        <img src="../assets/img/estadio1.jpg" id="imgAside" class="d-none d-md-block w-md-50" alt="">
+        <ul class="list-group mx-auto w-md-50" id="groupJuegos">
+            <li class="list-group-item flex-column">
+                <div class="d-flex w-100 justify-content-between p-2">
+                    <h6>Primera Fecha</h6>
+                    <small class="text-info">--/--/---- | --:-- hrs</small>
+                </div>
+                <p class="text-success d-flex justify-content-center m-3"><strong>Team A1 V/S Team B1.</strong></p>  
+                <p><small class="mb-1"><strong>Lugar del encuentro:</strong> Calle Equis #1234, Ygriega, Zeta.</small></p>
+                <button v-on:click='showDetails()' class="btn btn-sm btn-outline-success text-secondary mx-auto d-block p-0">ver detalles</button>
+            </li>
+            <li class="list-group-item flex-column">
+                <div class="d-flex w-100 justify-content-between p-2">
+                    <h6>Segunda Fecha</h6>
+                    <small class="text-info">--/--/---- | --:-- hrs</small>
+                </div>
+                <p class="text-success d-flex justify-content-center m-3"><strong>Team A2 V/S Team B2.</strong></p>    
+                <p><small class="mb-1"><strong>Lugar del encuentro:</strong> Calle Equis #1234, Ygriega, Zeta.</small></p>
+                <button v-on:click='showDetails()' class="btn btn-sm btn-outline-success text-secondary mx-auto d-block p-0">ver detalles</button>
+            </li>
+            <li class="list-group-item flex-column">
+                <div class="d-flex w-100 justify-content-between p-2">
+                    <h6>Tercera Fecha</h6>
+                    <small class="text-info">--/--/---- | --:-- hrs</small>
+                </div>
+                <p class="text-success d-flex justify-content-center m-3"><strong>Team A3 V/S Team B3.</strong></p>    
+                <p><small class="mb-1"><strong>Lugar del encuentro:</strong> Calle Equis #1234, Ygriega, Zeta.</small></p>
+                <button v-on:click='showDetails()' class="btn btn-sm btn-outline-success text-secondary mx-auto d-block p-0">ver detalles</button>
+            </li>
+            <li class="list-group-item flex-column">
+                <div class="d-flex w-100 justify-content-between p-2">
+                    <h6>Cuarta Fecha</h6>
+                    <small class="text-info">--/--/---- | --:-- hrs</small>
+                </div>
+                <p class="text-success d-flex justify-content-center m-3"><strong>Team A4 V/S Team B4.</strong></p>    
+                <p><small class="mb-1"><strong>Lugar del encuentro:</strong> Calle Equis #1234, Ygriega, Zeta.</small></p>
+                <button v-on:click='showDetails()' class="btn btn-sm btn-outline-success text-secondary mx-auto d-block p-0">ver detalles</button>
+            </li>
+            <li class="list-group-item flex-column">
+                <div class="d-flex w-100 justify-content-between p-2">
+                    <h6>Quinta Fecha</h6>
+                    <small class="text-info">--/--/---- | --:-- hrs</small>
+                </div>
+                <p class="text-success d-flex justify-content-center m-3"><strong>Team A5 V/S Team B5.</strong></p>    
+                <p><small class="mb-1"><strong>Lugar del encuentro:</strong> Calle Equis #1234, Ygriega, Zeta.</small></p>
+                <button v-on:click='showDetails()' class="btn btn-sm btn-outline-success text-secondary mx-auto d-block p-0">ver detalles</button>
+            </li>
+        </ul>
+    </div>
     <br>
-    <button id="verDetail" v-on:click='showDetails()' class=" btn btn-sm btn-outline-success d-block mx-auto mt-3 py-4 active">Ver detalles de los partidos</button>
-    <button id="" class="btn btn-sm btn-outline-success d-block mx-auto mt-3 py-3 active"><router-link to="/" class="nav-link text-light">Volver al inicio</router-link></button>
+    
   </div>
 </template>
 
@@ -60,6 +67,11 @@ export default {
 </script>
 
 <style scoped lang='sass'>
+#contLista
+    max-width: 90%
+#imgAside
+    max-width: 500px
+    max-height: 610px
 #groupJuegos
     max-width: 500px
 #verDetail

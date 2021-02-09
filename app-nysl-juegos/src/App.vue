@@ -1,7 +1,7 @@
 <template>
   <div id="main" >
     <MenuBar />
-    <router-view class=""/>
+    <router-view/>
     <PageFooter class="bg-dark text-light" />
     <br>
     <Footer />

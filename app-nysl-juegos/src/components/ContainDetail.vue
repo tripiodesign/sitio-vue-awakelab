@@ -172,8 +172,8 @@
             <p id="text-peq" class="text-secondary"><small class="mb-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim animi eos nostrum voluptatibus a iste harum magnam nobis voluptate omnis.</small></p>
         </li>
     </ul>
-    <button id="" class="btn btn-sm btn-outline-success d-block mx-auto mt-4 py-3 active"><router-link to="/Juegos" class="nav-link text-light">Volver a Juegos</router-link></button>
-    <button id="" class="btn btn-sm btn-outline-success d-block mx-auto mt-4 py-3 active"><router-link to="/" class="nav-link text-light">Volver al Inicio</router-link></button>
+    <br>
+    <router-link to="/" class="btn btn-sm btn-outline-success nav-link d-block text-light active">Volver al Inicio</router-link>
   </div>
 </template>
 

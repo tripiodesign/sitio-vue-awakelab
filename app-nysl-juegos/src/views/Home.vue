@@ -1,11 +1,15 @@
 <template>
   <div class="home">
     <br>
-    <img src="../assets/img/soccer1.jpg" alt="Portada" id='portada' class="d-flex">
-    <Header titulo='Bienvenidos a NYSL' class="py-4 bg-warning border-bottom border-success" />
+    <div id="contImg1" class="overflow-hidden">
+      <img src="../assets/img/soccer2.jpg" alt="Portada" id='portada' class="d-flex">
+    </div>
+    <Header titulo='Bienvenidos a NYSL' class="p-2 bg-warning" />
     <ContainHome
-     title1='Informate sobre los juegos...' 
-     infoJuegos='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, nihil quod sequi, consequatur suscipit dolores quaerat quia voluptates fugit corporis repellat odio voluptate quisquam eius alias in sapiente, fugiat unde. Eaque tempore explicabo exercitationem omnis quisquam cumque, dolore dolorum, enim est cum nobis ex. Quis, esse. Iste ut libero architecto?'
+     title1='Programación' 
+     title2='Detalles' 
+     title3='Eventos' 
+     infoJuegos='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, nihil quod sequi, consequatur suscipit dolores quaerat quia voluptates fugit corporis repellat odio voluptate quisquam eius'
      class="pb-5"
     />
   </div>
@@ -25,7 +29,10 @@ export default {
 </script>
 
 <style scoped lang="sass">
+#contImg1
+  width: 100%
+  max-height: 650px
 #portada
   width: 100%
-  max-height: 800px
+  margin-top: -10%
 </style>
