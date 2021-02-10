@@ -173,7 +173,10 @@
         </li>
     </ul>
     <br>
-    <router-link to="/" class="btn btn-sm btn-outline-success nav-link d-block text-light active">Volver al Inicio</router-link>
+    <div class="d-flex justify-content-between align-items-center">
+        <router-link to="/juegos" class="btn btn-sm btn-outline-success border-0 "><i class="fas fa-chevron-left mr-2"></i>Juegos</router-link>
+        <router-link to="/" class="btn btn-sm btn-outline-success border-0 ">Inicio<i class="fas fa-chevron-right ml-2"></i></router-link>
+    </div>
   </div>
 </template>
 

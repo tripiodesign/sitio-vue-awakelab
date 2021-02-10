@@ -11,7 +11,7 @@
                 </div>
                 <p class="text-success d-flex justify-content-center m-3"><strong>Team A1 V/S Team B1.</strong></p>  
                 <p><small class="mb-1"><strong>Lugar del encuentro:</strong> Calle Equis #1234, Ygriega, Zeta.</small></p>
-                <button v-on:click='showDetails()' class="btn btn-sm btn-outline-success text-secondary mx-auto d-block p-0">ver detalles</button>
+                
             </li>
             <li class="list-group-item flex-column">
                 <div class="d-flex w-100 justify-content-between p-2">
@@ -53,6 +53,10 @@
     </div>
     <br>
     
+    <div class="d-flex justify-content-between align-items-center">
+        <router-link to="/" class="btn btn-sm btn-outline-success border-0 "><i class="fas fa-chevron-left mr-2"></i>Inicio</router-link>
+        <router-link to="/juegos" class="btn btn-sm btn-outline-success border-0 ">Juegos<i class="fas fa-chevron-right ml-2"></i></router-link>
+    </div>
   </div>
 </template>
 
