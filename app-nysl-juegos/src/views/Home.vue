@@ -1,16 +1,16 @@
 <template>
-  <div class="home">
-    <br>
-    <div id="contImg1" class="overflow-hidden">
-      <img src="../assets/img/soccer2.jpg" alt="Portada" id='portada' class="d-flex">
+  <div class="home overflow-auto vh-100 pb-5">
+
+    <div id="contImg" class="bg-dark w-100">
+      <img src="../assets/img/soccer2-large.png" alt="Portada" id='imgPortada' class="d-flex rounded w-100">
     </div>
-    <Header titulo='Bienvenidos a NYSL' class="p-2 bg-warning" />
+    <Header titulo='Bienvenidos a NYSL' class="bg-warning" />
     <ContainHome
-     title1='Programación' 
-     title2='Detalles' 
-     title3='Eventos' 
-     infoJuegos='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, nihil quod sequi, consequatur suscipit dolores quaerat quia voluptates fugit corporis repellat odio voluptate quisquam eius'
-     class="pb-5"
+      title1='Programación' 
+      title2='Detalles' 
+      title3='Eventos' 
+      infoJuegos='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, nihil quod sequi, consequatur suscipit dolores quaerat quia voluptates fugit corporis repellat odio voluptate quisquam eius'
+      class="pb-5"
     />
   </div>
 </template>
@@ -29,10 +29,10 @@ export default {
 </script>
 
 <style scoped lang="sass">
-#contImg1
-  width: 100%
-  max-height: 650px
-#portada
-  width: 100%
-  margin-top: -10%
+#imgPortada
+  // width: 800px
+  display: block
+  margin: 0 auto
+  // max-width: 100vw
+  
 </style>

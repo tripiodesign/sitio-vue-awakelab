@@ -1,13 +1,12 @@
 <template>
-  <div class="juegos ">
-    <br>
-    <div id="contImg1" class="overflow-hidden">
-      <img src="../assets/img/calendario4.jpg" alt="Calendario" id='imgCalendar' class="d-flex">
-    </div>
+  <div class="juegos overflow-auto vh-100 pb-5">
+
+    <div id="contImg" class="bg-dark w-100">
+      <img src="../assets/img/calendario4-large.png" alt="Calendario" id='imgCalendar' class="d-flex rounded w-100">
+    </div>    
     <Header id="headTitle" titulo='Juegos de la temporada' class="bg-warning p-2" />
     <ListaPartidos />
     <!-- <ContainJuegos /> -->
-    <br>
   </div>
 </template>
 
@@ -27,10 +26,12 @@ export default {
 </script>
 
 <style scoped lang='sass'>
-#contImg1
-  width: 100%
-  max-height: 650px
+
 #imgCalendar
-  width: 100%
-  margin-top: -10%
+  // width: 800px
+  display: block
+  margin: 0 auto
+  margin-top: -60px
+  // max-width: 100vw
+
 </style>

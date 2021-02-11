@@ -1,23 +1,33 @@
 <template>
 <div id="menuBar">
-        <nav id="menu" class="container-fluid m-0 p-0 navbar navbar-expand-lg bg-dark navbar-dark d-flex">
+    <nav id="menu" class="m-0 p-0 navbar navbar-expand-md bg-dark navbar-dark d-flex w-100">
 
-            <div class="d-flex justify-content-start align-items-center" id="contBrand">
-              <img src="../assets/img/icono.png" id="logo" alt="" class="" />
-            </div>
+        <div class="d-flex justify-content-start align-items-center" id="contBrand">
+          <img src="../assets/img/icono.png" id="logo" alt="" />
+        </div>
 
-            <button type="button"  class="btn navbar-toggler mr-3" data-toggle="collapse" data-target="#elMenu" aria-expanded="false">
-                <span class="navbar-toggler-icon" ></span>
-            </button>
+        <button type="button"  class="btn navbar-toggler mr-3" data-toggle="collapse" data-target="#elMenu" aria-expanded="false">
+            <span class="navbar-toggler-icon" ></span>
+        </button>
 
-            <div id="elMenu" class="collapse navbar-collapse w-100 d-lg-flex justify-content-end">
-              <ul class="navbar-nav text-center">
-                <li><router-link class="nav-item text-warning nav-link" :to="{name: 'Home'}"><i class="fas fa-home mr-2"></i>Inicio</router-link></li>
-                <li><router-link class="nav-item text-warning nav-link" to="/juegos"><i class="far fa-calendar-alt mr-2"></i>Juegos</router-link></li>
-              </ul> 
-            </div>
+        <div id="elMenu" class="collapse navbar-collapse position-relative w-100 d-md-flex justify-content-end">
+          <ul id="menuTab" role="tablist" class="nav nav-tabs text-center d-flex justify-content-center border-0">
+            <li class="nav-item" role="navigation">
+              <router-link class="nav-link btn-outline-warning" aria-current="page" to="/" exact exact-active-class="active">Inicio</router-link>
+            </li>
+            <li class="nav-item" role="navigation">
+              <router-link class="nav-link disabled" aria-current="page" to="/nosotros" exact exact-active-class="active">Nosotros</router-link>
+            </li>
+            <li class="nav-item" role="navigation">
+              <router-link class="nav-link btn-outline-warning" aria-current="page" to="/juegos" exact exact-active-class="active">Juegos</router-link>
+            </li>
+            <li class="nav-item" role="navigation">
+              <router-link class="nav-link disabled" aria-current="page" to="/contacto" exact exact-active-class="active">Contacto</router-link>
+            </li>
+          </ul> 
+        </div>
 
-        </nav>
+    </nav>
 </div>
 </template>
 
@@ -30,15 +40,13 @@ export default {
 </script>
 
 <style scoped lang="sass">
+// #elMenu
+//   position-relative
 #contBrand
   margin-left: -4px
   // margin-top: -8px
   // padding-bottom: -5px
 
-#menu
-  z-index: 1000
-  position: fixed
-  width: 100%
 
 #logo
   transform: scale()

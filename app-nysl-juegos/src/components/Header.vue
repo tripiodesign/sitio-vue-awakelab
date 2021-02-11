@@ -1,6 +1,6 @@
 <template>
   <div id="header">
-      <h2 id="pHeader" class="mb-2 p-2 bg-warning text-center d-block m-auto">{{titulo}}</h2>
+      <h2 id="pHeader" class="p-1 bg-warning opacity-75 text-center d-block m-auto">{{titulo}}</h2>
   </div>
 </template>
 
