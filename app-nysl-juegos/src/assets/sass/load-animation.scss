@@ -1,0 +1,27 @@
+.load-start{
+    width: 0%;
+}
+
+.load-25{
+    width: 25%;
+}
+
+.load-mid{
+    width: 50%;
+}
+
+.load-75{
+    width: 75%;
+}
+
+.load-end{
+    width: 100%;
+}
+
+.animacion-uno{
+    transition: all 2s ease 1s;
+}
+
+// @function loadProgress(){
+//      document.getElementById("load-bar").classList.toggle("load-end")
+// }

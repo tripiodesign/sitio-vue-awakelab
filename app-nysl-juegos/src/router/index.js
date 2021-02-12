@@ -20,7 +20,8 @@ const routes = [
   {
     path: '/detalles',
     name: 'Detalles',
-    component: () => import('../views/DetailGame.vue')
+    props: true,
+    component: () => import('../views/Detalles.vue')
   },
   {
     path: '/contacto',

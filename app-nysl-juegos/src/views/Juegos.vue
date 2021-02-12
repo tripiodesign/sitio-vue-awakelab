@@ -2,11 +2,12 @@
   <div class="juegos overflow-auto vh-100 pb-5">
 
     <div id="contImg" class="bg-dark w-100">
-      <img src="../assets/img/calendario4-large.png" alt="Calendario" id='imgCalendar' class="d-flex rounded w-100">
+      <img src="../assets/img/calendario4-large.jpg" alt="Calendario" id='imgCalendar' class="d-flex rounded w-100">
     </div>    
     <Header id="headTitle" titulo='Juegos de la temporada' class="bg-warning p-2" />
     <ListaPartidos />
     <!-- <ContainJuegos /> -->
+    <br><br>
   </div>
 </template>
 
@@ -31,7 +32,6 @@ export default {
   // width: 800px
   display: block
   margin: 0 auto
-  margin-top: -60px
   // max-width: 100vw
 
 </style>

@@ -2,7 +2,7 @@
   <div class="home overflow-auto vh-100 pb-5">
 
     <div id="contImg" class="bg-dark w-100">
-      <img src="../assets/img/soccer2-large.png" alt="Portada" id='imgPortada' class="d-flex rounded w-100">
+      <img src="../assets/img/soccer2-large.jpg" alt="Portada" id='imgPortada' class="d-flex rounded w-100">
     </div>
     <Header titulo='Bienvenidos a NYSL' class="bg-warning" />
     <ContainHome

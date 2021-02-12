@@ -1,12 +1,12 @@
 <template>
-  <div class="details">
-    <br>
-    <div id="contImg1" class="overflow-hidden">
-      <img src="../assets/img/soccer-field2.jpg" alt="imgDetail" id='imgDetail' class="d-flex">
+  <div id="detalles" class="overflow-auto vh-100 pb-5">
+
+    <div id="contImg1" class="">
+      <img src="../assets/img/soccer-field2-large.jpg" alt="imgDetail" id='imgDetail' class="d-flex">
     </div>
     <Header titulo='Detalles de los juegos' id="head" class="p-2 bg-warning" />
     <ContainDetail />
-    <br>
+    <br><br>
   </div>
 </template>
 
@@ -15,7 +15,7 @@ import Header from '@/components/Header'
 import ContainDetail from '@/components/ContainDetail'
 
 export default {
-    name: 'DetailGame',
+    name: 'Detalles',
     components:{
         Header,
         ContainDetail,

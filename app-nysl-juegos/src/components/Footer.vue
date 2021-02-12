@@ -5,7 +5,7 @@
                     <router-link to="/" class="text-success">NYSL</router-link> | Todos los derechos son reservados &#0174;
                 </button>
             </div>
-            <div class="collapse border overflow-auto max-height-1" id="contFooter">
+            <div class="collapse border overflow-auto mh-100-vh" id="contFooter">
                 <div class="bg-success border-top">
                     <div class="container-fluid bg-warning">
                         <div class="py-1 d-flex align-items-center mx-auto" id="divRRSS">
@@ -20,17 +20,18 @@
 
                 <div class="container text-center text-md-left mt-5">
                     <div class="row">
-                        <div class="col-md-3 mx-auto mb-4">
-                            <h6 class="text-uppercase font-weight-bold text-info">NYSL Ltda.</h6>
+                        <div class="col-md-5 mx-auto mb-4">
+                            <h6 class="text-uppercase font-weight-bold text-light">NYSL Ltda.</h6>
                             <ul class="list-unstyled">
                                 <li class="divider bg-success rounded pt-1"></li>
                             </ul>
 
-                            <p class="mt-2 p-2 bg-secondary text-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat obcaecati vel earum aspernatur sit impedit? Quod modi, rerum, fugit accusantium quo nihil velit deserunt ex beatae odio, facere vero at!</p>
+                            <p class="d-none d-md-block mt-2 p-2 bg-secondary text-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat obcaecati vel earum aspernatur sit impedit? Quod modi, rerum, fugit accusantium quo nihil velit deserunt ex beatae odio, facere vero at!</p>
+                            <p class="mt-2 p-2 text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat obcaecati vel earum aspernatur sit impedit? Quod modi, rerum, fugit accusantium quo nihil velit deserunt ex beatae odio, facere vero at!</p>
                         </div>
                         
                         <div class="col-md-2 mx-auto mb-4">
-                            <h6 class="text-uppercase font-weight-bold text-info">Eventos</h6>
+                            <h6 class="text-uppercase font-weight-bold text-light">Eventos</h6>
                             <ul class="list-unstyled">
                                 <li class="divider bg-success rounded pt-1"></li>
                             </ul>
@@ -44,7 +45,7 @@
                         </div>
                         
                         <div class="col-md-2 mx-auto mb-4">
-                            <h6 class="text-uppercase font-weight-bold text-info">Mas Visitados</h6>
+                            <h6 class="text-uppercase font-weight-bold text-light">Mas Visitados</h6>
                             <ul class="list-unstyled">
                                 <li class="divider bg-success rounded pt-1"></li>
                             </ul>
@@ -58,7 +59,7 @@
                         </div>
                         
                         <div class="col-md-3 mx-auto mb-4">
-                            <h6 class="text-uppercase font-weight-bold text-info">Contacto</h6>
+                            <h6 class="text-uppercase font-weight-bold text-light">Contacto</h6>
                             <ul class="list-unstyled">
                                 <li class="divider bg-success rounded pt-1"></li>
                             </ul>
@@ -91,8 +92,8 @@ export default {
     font-size: .8em
     text-align: center
 
-.max-height-1
-    max-height: 200px
+.mh-100-vh
+    max-height: 90vh
 
 #divRRSS
     font-size: 1.8em
