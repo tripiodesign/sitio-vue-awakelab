@@ -11,25 +11,25 @@
         <small class="text-info p-2"><small><small>{{$route.params.fecha}} | {{$route.params.hora}}</small></small></small>
 
       </div>
-      <div class="row">
-        <div class="col-12 col-sm-6">
+      <div class="d-sm-flex">
+        <div class="">
           <p class="text-secondary p-2"><small>{{$route.params.descripcion}}</small></p>
           <div class="alert alert-secondary d-flex justify-content-between align-items-center mt-4 w-100">
             <p class="form-check-label d-block my-auto">{{$route.params.lugar}}</p>
             <div class="form-check form-check-inline" id="check-mapa">
-              <label for="switchMapa" class="btn btn-outline-success" style="min-width: 45px; min-height: 40px"><i id="contMapa" class="fas fa-map-marked-alt"></i></label>
+              <div class="overflow-hidden" style="width: 45px; height: 40px">
+                <label id="contMapa" for="switchMapa" class="collapse btn btn-outline-success" style="min-width: 45px; min-height: 40px; transition: all .01s ease"><i  class=" fas fa-map-marked-alt"></i></label>
+                <label id="contMapa" for="switchMapa" class="show btn btn-outline-danger" style="min-width: 45px; min-height: 40px; transition: all .01s ease"><i class=" fas fa-map-marked-alt"></i></label>
+              </div>
               <input class="form-check-input btn-check d-none" type="checkbox" data-bs-target="#contMapa" data-bs-toggle="collapse" aria-expanded="false" id="switchMapa">
             </div>
           </div>
         </div>
 
-        <div class="collapse fade col-12 col-sm my-auto">
-          <span class="alert alert-warning show">hola</span>
-        </div>
-        <div id="contMapa" class="collapse fade col-12 col-sm my-auto">
+        <div id="contMapa" class="collapse fade mx-2 my-auto">
           <p><strong>Referencia: </strong>{{$route.params.referencia}}</p>
 
-          <iframe :src="$route.params.mapa" class="w-100 h-100 m-auto d-block" frameborder="0" style="border:0; max-height:450px;" allowfullscreen="" aria-hidden="" tabindex="0"></iframe>
+          <iframe :src="$route.params.mapa" class="w-100 h-100 m-auto d-block" frameborder="0" style="border:0; min-width:300px; max-height:450px;" allowfullscreen="" aria-hidden="" tabindex="0"></iframe>
         </div>
       </div>
 
