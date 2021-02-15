@@ -1,60 +1,59 @@
 <template>
-  <div id="main" class="position-fixed w-100 bg-light" >
-    <MenuBar />
-    <router-view v-slot="{ Component }" class="" style="">
-      <transition name="slide-fade" mode="in-out" >
+  <div id="main" style="height: 100vh">
+    <MenuBar class="fixed-top" />
+    <br>
+    <router-view v-slot="{ Component }" class="my-3">
+      <!-- <LoadScreen /> -->
+      <transition name="slide-fade">
         <component :is="Component" />
       </transition>
     </router-view>
+    <br>
+    <Footer class="fixed-bottom" />
     <!-- <PageFooter class="bg-dark text-light" /> -->
-    <Footer />
   </div>
 </template>
 
 <script>
 import MenuBar from '../src/components/MenuBar'
-import Footer from '@/components/Footer'
+import Footer from '../src/components/Footer'
+// import LoadScreen from '../src/components/LoadScreen'
 // import PageFooter from '@/components/PageFooter'
 
 export default {
   name: 'App',
   components:{
     MenuBar,
+    // LoadScreen,
     Footer,
     // PageFooter,
   },
-  methods: {
-    loadProgress(){
-      setTimeout(() => {  console.log("World!"); }, 2000);
-     document.getElementById("load-bar").classList.toggle("load-end");
-    }
-},
 }
+
+// window.onload = function(){
+//   var contenedor = document.getElementById('contenedor-carga');
+//   contenedor.style.visibility = 'hidden';
+//   contenedor.style.opacity = '0';
+// }
 </script>
 
 <style>
   .slide-fade-enter-active {
     transition: all .4s ease-in-out;
+    min-height: 100vh;
   }
   .slide-fade-leave-active {
     transition: all .4s cubic-bezier(1, 1, 1, 1);
+    min-height: 100vh;
   }
   .slide-fade-enter, .slide-fade-leave-to
   /* .slide-fade-leave-active below version 2.1.8 */ {
-    transform: translateX(-110%);
-    opacity: 0.7;
+    transform: translateY(-100%,);
+    opacity: 0;
+  }
+  .slide-fade-enter-to .slide-fade-leave{
+    transform: translateX(-100%);
+    opacity: 0;
   }
 
-/* Clases para animacion de carga */
-.load-end{
-    width: 100%;
-}
-
-.animacion-uno{
-    transition: all 2s ease 1s;
-}
-
-#main{
-  height: 100vh;
-}
 </style>

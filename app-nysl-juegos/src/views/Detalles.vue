@@ -1,26 +1,33 @@
 <template>
-  <div id="detalles" class="overflow-auto vh-100 pb-5">
-
-    <div id="contImg1" class="">
+  <div id="detalles" class="h">
+    <!-- <LoadScreen /> -->
+    <div id="contImg1" class="bg-dark w-100">
       <img src="../assets/img/soccer-field2-large.jpg" alt="imgDetail" id='imgDetail' class="d-flex">
     </div>
     <Header titulo='Detalles de los juegos' id="head" class="p-2 bg-warning" />
     <ContainDetail />
-    <br><br>
   </div>
 </template>
 
 <script>
 import Header from '@/components/Header'
 import ContainDetail from '@/components/ContainDetail'
+// import LoadScreen from '@/components/LoadScreen'
 
 export default {
     name: 'Detalles',
     components:{
-        Header,
-        ContainDetail,
+      // LoadScreen,
+      Header,
+      ContainDetail,
     }
 }
+
+// window.onload = function(){
+//   var contenedor = document.getElementById('contenedor-carga');
+//   contenedor.style.visibility = 'hidden';
+//   contenedor.style.opacity = '0';
+// }
 </script>
 
 <style scoped lang='sass'>

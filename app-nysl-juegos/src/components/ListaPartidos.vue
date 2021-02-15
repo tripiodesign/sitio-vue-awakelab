@@ -1,10 +1,10 @@
 <template>
   <div id="listaPartidos" class="container">
-    <div v-for="partido in listadoPartidos" :key="partido.Id" class="d-block">
-        <div class="card my-1">
+    <div v-for="partido in listadoPartidos" :key="partido.Id" class="d-block mb-3">
+        <div class="card border my-2" style="background-color:rgba(200,200,200,.3)">
             <div class="card-head d-flex justify-content-center items-align-center p-2">
                 <h5 class="w-100">
-                    <span class="badge badge-dark text-warning py-3 w-100">
+                    <span class="badge bg-dark text-light py-3 w-100">
                         {{partido.Equipo1}}{{partido.Id +1}} vs {{partido.Equipo2}}{{partido.Id +1}}
                     </span>
                 </h5>
@@ -43,14 +43,14 @@
                                         descripcion: partido.Descripcion,
 
                                     }
-                }" class="btn btn-sm btn-outline-success mx-auto mt-4 d-block" exact>ver detalles</router-link>
+                }" class="badge bg-warning border border-dark text-dark rounded mx-auto py-1 mt-4 w-50 d-block" style="font-size: 1.02em" exact>ver detalles</router-link>
             </div>
         </div>
     </div>
-
+    
     <div class="d-flex justify-content-between align-items-center">
-        <router-link to="/" class="btn btn-sm btn-outline-success border-0 "><i class="fas fa-chevron-left mr-2"></i>Inicio</router-link>
-        <router-link to="/detalles" class="btn btn-sm btn-outline-success border-0 ">Detalles<i class="fas fa-chevron-right ml-2"></i></router-link>
+        <router-link to="/" class="btn btn-sm btn-outline-dark border-0 "><i class="fas fa-chevron-left mr-2"></i>Inicio</router-link>
+        <!-- <router-link to="/detalles" class="btn btn-sm btn-outline-dark border-0 ">Detalles<i class="fas fa-chevron-right ml-2"></i></router-link> -->
     </div>
   </div>        
 </template>

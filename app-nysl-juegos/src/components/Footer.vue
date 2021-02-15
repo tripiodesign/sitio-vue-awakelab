@@ -1,11 +1,11 @@
 <template>
-    <div id="footer" class="fixed-bottom bg-dark border-top p-0">
+    <div id="footer" class="container-fluid bg-dark border-top p-0" >
             <div class="w-100 p-0 m-0" id="contBtn1">
-                <button type="button" class="btn btn-sm rounded-0 bg-white w-100" data-toggle="collapse" data-target="#contFooter" aria-expanded="false" id="btnFooter">
+                <button id="btnFooter" data-bs-toggle="collapse" data-bs-target="#contFooter" aria-expanded="false" type="button" class="btn btn-sm rounded-0 bg-white w-100">
                     <router-link to="/" class="text-success">NYSL</router-link> | Todos los derechos son reservados &#0174;
                 </button>
             </div>
-            <div class="collapse border overflow-auto mh-100-vh" id="contFooter">
+            <div class="collapse" id="contFooter">
                 <div class="bg-success border-top">
                     <div class="container-fluid bg-warning">
                         <div class="py-1 d-flex align-items-center mx-auto" id="divRRSS">
@@ -91,9 +91,6 @@ export default {
 #footer
     font-size: .8em
     text-align: center
-
-.mh-100-vh
-    max-height: 90vh
 
 #divRRSS
     font-size: 1.8em
